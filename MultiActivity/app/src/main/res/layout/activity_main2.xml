@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rohitdanda.multiactivity.Main2Activity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/textview"
+        android:layout_height="wrap_content"
+        android:text="Second World!"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/firtbutton"
+        android:onClick="toFirst"
+        android:layout_below="@id/textview"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Jump TO second World"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Prentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rohit.tictoc.MainActivity">
+
+
+    <GridLayout
+        android:id="@+id/boardlayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3"
+        >
+
+        <ImageView
+            android:id="@+id/redbutton0"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:onClick="dropin"
+            android:tag="0"/>
+
+        <ImageView
+            android:id="@+id/redbutton1"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:onClick="dropin"
+            android:tag="1"/>
+        <ImageView
+            android:id="@+id/redbutton2"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:onClick="dropin"
+            android:tag="2"/>
+        <ImageView
+            android:id="@+id/redbutton3"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:onClick="dropin"
+            android:tag="3"/>
+        <ImageView
+            android:id="@+id/redbutton4"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:onClick="dropin"
+            android:tag="4"/>
+        <ImageView
+            android:id="@+id/redbutton5"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:onClick="dropin"
+            android:tag="5"/>
+        <ImageView
+            android:id="@+id/redbutton6"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:onClick="dropin"
+            android:tag="6"/>
+        <ImageView
+            android:id="@+id/redbutton7"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:onClick="dropin"
+            android:tag="7"/>
+        <ImageView
+            android:id="@+id/redbutton8"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:onClick="dropin"
+            android:tag="8"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/winnerlayout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/winnertext"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </LinearLayout>
+
+</RelativeLayout>
